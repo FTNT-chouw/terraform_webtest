@@ -54,17 +54,17 @@ resource "fortiweb_system_certificate_sni_members" "test3" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate sni members entry.
-* `id` - Id setting.
-* `domain` - Domain setting.
-* `domain_type` - Domain-Type setting.
-* `multi_local_cert` - Multi-Local-Cert setting.
-* `multi_local_cert_group` - Multi-Local-Cert-Group setting.
-* `local_cert` - Local-Cert setting.
-* `certificate_type` - Certificate-Type setting.
-* `lets_certificate` - Lets-Certificate setting.
-* `inter_group` - Inter-Group setting.
-* `verify` - Verify setting.
+* `mkey` - The name of the system certificate sni.
+* `sub_mkey` - The ID of the system certificate sni members entry.
+* `domain` - The domain of the secure website (HTTPS) that uses the certificate specified by local-cert.
+* `domain_type` - Specify plain/regular to match multiple domains to certificates using a literal domain/regular expression specified in domain.
+* `certificate_type` - Enable allow FortiWeb to automatically retrieve CA certificates from Let's Encrypt. Valid values: enable, disable.
+* `local_cert` - The name of the server certificate that FortiWeb uses to encrypt or decrypt SSL-secured connections for the website specified by domain.
+* `multi_local_cert` - Enable this option to allow FortiWeb to use multiple local certificates. Valid values: enable, disable.
+* `multi_local_cert_group` - Select the multi-certificate you have created.
+* `lets_certificate` - Select the Letsencrypt certificate you have created.
+* `inter_group` - The name of a group of intermediate certificate authority (CA) certificates, if any, that FortiWeb presents to validate the CA signature of the certificate specified by local-cert.
+* `verify` - The name of a certificate verifier, if any, that FortiWeb uses when an HTTP client presents its personal certificate.
 
 ## Attribute Reference
 

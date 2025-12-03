@@ -22,16 +22,7 @@ resource "fortiweb_system_certificate_sni" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate sni entry.
-* `domain` - Domain setting.
-* `domain_type` - Domain-Type setting.
-* `multi_local_cert` - Multi-Local-Cert setting.
-* `multi_local_cert_group` - Multi-Local-Cert-Group setting.
-* `local_cert` - Local-Cert setting.
-* `certificate_type` - Certificate-Type setting.
-* `lets_certificate` - Lets-Certificate setting.
-* `inter_group` - Inter-Group setting.
-* `verify` - Verify setting.
+* `mkey` - The name of the system certificate sni entry.
 
 ## Attribute Reference
 

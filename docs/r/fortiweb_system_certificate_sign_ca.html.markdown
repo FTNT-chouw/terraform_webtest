@@ -32,14 +32,11 @@ resource "fortiweb_system_certificate_sign_ca" "test2" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate sign ca entry.
-* `type` - Type setting.
-* `status` - Status setting.
-* `comment` - Comment setting.
-* `flag` - Flag setting.
-* `certificate` - Certificate setting.
-* `private_key` - Private-Key setting.
-* `passwd` - Passwd setting.
+* `mkey` - The name of the system certificate sign ca entry.
+* `upfile` - The name of a certificate file.
+* `keyfile` - The name of a key file.
+* `passwd` - The password for the certificate.
+* `comment` -  	Enter a description or other comment.
 
 ## Attribute Reference
 

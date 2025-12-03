@@ -28,8 +28,8 @@ resource "fortiweb_system_certificate_ocsp_responder" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate ocsp responder entry.
-* `ocsp_url` - Ocsp-Url setting.
+* `mkey` - The name of the system certificate ocsp responder entry.
+* `ocsp_url` - Enter URL of the OCSP server corresponding to the specified CA certificate. 
 * `ocsp_signing_certs` - Ocsp-Signing-Certs setting.
 * `timeout` - Timeout setting.
 * `comment` - Comment setting.

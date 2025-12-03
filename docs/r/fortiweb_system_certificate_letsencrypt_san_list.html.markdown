@@ -24,11 +24,9 @@ resource "fortiweb_system_certificate_letsencrypt_san_list" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate letsencrypt san list entry.
-* `id` - Id setting.
-* `type` - Type setting.
-* `san_dns` - San-Dns setting.
-* `san_ip` - San-Ip setting.
+* `mkey` - The name of the system certificate letsencrypt.
+* `sub_mkey` - The ID of the system certificate letsencrypt san list entry.
+* `san_dns` - Enter domain names.
 
 ## Attribute Reference
 

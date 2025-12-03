@@ -28,9 +28,13 @@ resource "fortiweb_system_ntp_ntpserver" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system ntp entry.
-* `ntpsync` - Ntpsync setting.
-* `syncinterval` - Syncinterval setting.
+* `sub_mkey` - The ID of the system ntp ntpserver entry.
+* `mkey` - Specify the IP address or domain name of an NTP server or pool.
+* `authentication` - Enable to apply authentication keys to secure the NTP server. Valid values: enable, disable.
+* `ip_type` - The IP type. Valid values: v4, v6, both.
+* `key_id` - Specify the Key ID. Valid values: 0-65536.
+* `key_type` - The key type. Valid values: aes128, aes256, sha1, sha256.
+* `key` - Specify the Key in hexadecimal format.
 
 ## Attribute Reference
 

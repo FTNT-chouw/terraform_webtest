@@ -26,11 +26,11 @@ resource "fortiweb_system_certificate_ocsp_stapling" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate ocsp stapling entry.
-* `certificate` - Certificate setting.
-* `local_cert` - Local-Cert setting.
-* `ocsp_url` - Ocsp Url setting.
-* `comment` - Comment setting.
+* `mkey` - The name of the system certificate ocsp stapling entry.
+* `certificate` - A CA certificate that has been imported in FortiWeb.
+* `local_cert` - The local certificate of the server certificate to be queried.
+* `ocsp_url` - Enter URL of the OCSP server corresponding to the specified CA certificate. 
+* `comment` - Optionally, enter a comment for the OCSP group.
 
 ## Attribute Reference
 

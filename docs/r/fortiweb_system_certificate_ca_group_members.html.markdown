@@ -34,13 +34,12 @@ resource "fortiweb_system_certificate_ca_group_members" "test2" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate ca group members entry.
-* `id` - Id setting.
-* `type` - Type setting.
-* `name` - Name setting.
-* `tsl` - Tsl setting.
-* `publish_dn` - Publish-Dn setting.
-* `trust_anchor` - Trust-Anchor setting.
+* `mkey` - The name of the system certificate ca group.
+* `sub_mkey` - The ID of the system certificate ca group members entry.
+* `name` - The name of the system certificate ca.
+* `type` - Select to upload CA certificate or TSL.
+* `publish_dn` - Enable to list only certificates related to the specified CA Group. Valid values: enable, disable.
+* `tsl` - The name of the TSL.
 
 ## Attribute Reference
 

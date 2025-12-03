@@ -46,47 +46,23 @@ resource "fortiweb_system_admin_settings" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system admin entry.
-* `access_profile` - Access-Profile setting.
-* `trusthostv4` - Trusthostv4 setting.
-* `trusthostv6` - Trusthostv6 setting.
-* `last_name` - Last-Name setting.
-* `first_name` - First-Name setting.
-* `email_address` - Email-Address setting.
-* `phone_number` - Phone-Number setting.
-* `mobile_number` - Mobile-Number setting.
-* `hidden` - Hidden setting.
-* `domains` - Domains setting.
-* `gui_global_menu_favorites` - Gui-Global-Menu-Favorites setting.
-* `gui_vdom_menu_favorites` - Gui-Vdom-Menu-Favorites setting.
-* `column` - Column setting.
-* `status` - Status setting.
-* `name` - Name setting.
-* `layout_type` - Layout-Type setting.
-* `permanent` - Permanent setting.
-* `widget_table` - Widget-Table setting.
-* `type` - Type setting.
-* `admin_usergrp` - Admin-Usergrp setting.
-* `password` - Password setting.
-* `wildcard` - Wildcard setting.
-* `accprofile_override` - Accprofile-Override setting.
-* `fortiai` - Fortiai setting.
-* `sshkey` - Sshkey setting.
-* `passwd_set_time` - Passwd-Set-Time setting.
-* `history_password_pos` - History-Password-Pos setting.
-* `history_password0` - History-Password0 setting.
-* `history_password1` - History-Password1 setting.
-* `history_password2` - History-Password2 setting.
-* `history_password3` - History-Password3 setting.
-* `history_password4` - History-Password4 setting.
-* `history_password5` - History-Password5 setting.
-* `history_password6` - History-Password6 setting.
-* `history_password7` - History-Password7 setting.
-* `history_password8` - History-Password8 setting.
-* `history_password9` - History-Password9 setting.
-* `force_password_change` - Force-Password-Change setting.
-* `feature_info_ver` - Feature-Info-Ver setting.
-* `old_password` - Old-Password setting.
+* `hostname` - The host name of this FortiWeb appliance.
+* `http` - Access-Profile setting.
+
+* `passwordpolicy` - Access-Profile setting.
+* `status` - Enable to enforce password rules for administrator accounts. Valid values: enable, disable.
+* `min_length_option` - Enable to set the minimum length for the password. Valid values: enable, disable.
+* `min_length` - Enter the minimum password length. Valid values: 8-128.
+* `single_admin_mode` - Enable to activate single admin user login. Valid values: enable, disable.
+* `character_requirements` - Enable to set characters. Valid values: enable, disable.
+* `min_upper_case_letter` - Enter the number of upper case characters. Valid values: 0-128.
+* `min_lower_case_letter` - Enter the number of lower case characters. Valid values: 0-128.
+* `min_number` - Enter the number of number characters. Valid values: 0-128.
+* `min_non_alphanumeric` - Enter the number of special characters. Valid values: 0-128.
+* `forbid_password_reuse` - Enable forbidding password re-use. Valid values: enable, disable.
+* `history_password_number` - Enter the number of history passwords that can not be reused. Valid values: 1-10.
+* `expire_status` - Enable password expiration. Valid values: enable, disable.
+* `expire_day` - Enter the valid period for the password. Valid values: 1-999.
 
 ## Attribute Reference
 

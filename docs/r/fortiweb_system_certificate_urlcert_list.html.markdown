@@ -25,10 +25,10 @@ resource "fortiweb_system_certificate_urlcert_list" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate urlcert list entry.
-* `id` - Id setting.
-* `url` - Url setting.
-* `require` - Require setting.
+* `mkey` - The name of the system certificate urlcert.
+* `sub_mkey` - The ID of the system certificate urlcert list entry.
+* `url` - When the URL of a client request matches this value and the value of require is enable, FortiWeb requires the client to present a private certificate.
+* `require` - Specify whether client requests with the URL specified by url are required to present a personal certificate. Valid values: enable, disable.
 
 ## Attribute Reference
 

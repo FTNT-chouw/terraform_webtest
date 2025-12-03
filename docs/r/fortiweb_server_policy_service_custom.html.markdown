@@ -24,9 +24,9 @@ resource "fortiweb_server_policy_service_custom" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the server policy service custom entry.
-* `port` - Port setting.
-* `protocol` - Protocol setting.
+* `mkey` - The name of the server policy service custom entry.
+* `port` - Enter the port number on which a virtual server will receive TCP/IP connections for HTTP or HTTPS requests. Valid values: 1–65535.
+* `protocol` - TCP.
 
 ## Attribute Reference
 

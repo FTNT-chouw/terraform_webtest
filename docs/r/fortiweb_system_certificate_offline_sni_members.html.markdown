@@ -26,11 +26,11 @@ resource "fortiweb_system_certificate_offline_sni_members" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate offline sni members entry.
-* `id` - Id setting.
-* `domain_type` - Domain-Type setting.
-* `domain` - Domain setting.
-* `local_cert` - Local-Cert setting.
+* `mkey` - The name of the system certificate offline sni.
+* `sub_mkey` - The ID of the system certificate offline sni members entry.
+* `domain_type` - Specify plain/regular to match multiple domains to certificates using a literal domain/regular expression specified in domain. Valid values: plain, regular.
+* `domain` - The domain of the secure website (HTTPS) that uses the certificate specified by local-cert.
+* `local_cert` - The name of the server certificate that FortiWeb uses to encrypt or decrypt SSL-secured connections for the website specified by domain. 
 
 ## Attribute Reference
 

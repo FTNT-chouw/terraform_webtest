@@ -33,18 +33,18 @@ resource "fortiweb_system_accprofile" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system accprofile entry.
-* `mntgrp` - Mntgrp setting.
-* `admingrp` - Admingrp setting.
-* `sysgrp` - Sysgrp setting.
-* `netgrp` - Netgrp setting.
-* `loggrp` - Loggrp setting.
-* `authusergrp` - Authusergrp setting.
-* `traroutegrp` - Traroutegrp setting.
-* `wafgrp` - Wafgrp setting.
-* `wadgrp` - Wadgrp setting.
-* `wvsgrp` - Wvsgrp setting.
-* `mlgrp` - Mlgrp setting.
+* `mkey` - The name of the system accprofile entry.
+* `mntgrp` - Enter the degree of access that administrator accounts using this access profile will have to maintenance commands. Valid values: none, r, rw, w.
+* `admingrp` - Enter the degree of access that administrator accounts using this access profile will have to the system administrator configuration. Valid values: none, r, rw, w.
+* `sysgrp` - Enter the degree of access that administrator accounts using this access profile will have to the basic system configuration. Valid values: none, r, rw, w.
+* `netgrp` - Enter the degree of access that administrator accounts using this access profile will have to the network interface and routing configuration. Valid values: none, r, rw, w.
+* `loggrp` - Enter the degree of access that administrator accounts using this access profile will have to the logging and alert email configuration. Valid values: none, r, rw, w.
+* `authusergrp` - Enter the degree of access that administrator accounts using this access profile will have to the HTTP authentication user configuration. Valid values: none, r, rw, w.
+* `traroutegrp` - Enter the degree of access that administrator accounts using this access profile will have to the server policy configuration. Valid values: none, r, rw, w.
+* `wafgrp` - Enter the degree of access that administrator accounts using this access profile will have to the without affecting traffic configuration. Valid values: none, r, rw, w.
+* `wadgrp` - Enter the degree of access that administrator accounts using this access profile will have to the web anti-defacement configuration. Valid values: none, r, rw, w.
+* `wvsgrp` - Enter the degree of access that administrator accounts using this access profile will have to the web protection profile configuration. Valid values: none, r, rw, w.
+* `mlgrp` - Enter the degree of access that administrator accounts using this access profile will have to the machine learning configuration. Valid values: none, r, rw, w.
 
 ## Attribute Reference
 

@@ -26,26 +26,11 @@ resource "fortiweb_system_certificate_letsencrypt" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate letsencrypt entry.
-* `domain` - Domain setting.
-* `status` - Status setting.
-* `validation_method` - Validation-Method setting.
-* `key_type` - Key-Type setting.
-* `retry_times` - Retry-Times setting.
-* `acme_service` - Acme-Service setting.
-* `acme_service_url` - Acme-Service-Url setting.
-* `acme_eab` - Acme-Eab setting.
-* `eab` - Eab setting.
-* `acme_email` - Acme-Email setting.
-* `expire_date` - Expire-Date setting.
-* `certificate` - Certificate setting.
-* `private_key` - Private-Key setting.
-* `tls_validation_certificate` - Tls-Validation-Certificate setting.
-* `tls_validation_private_key` - Tls-Validation-Private-Key setting.
-* `renew_period` - Renew-Period setting.
-* `type` - Type setting.
-* `san_dns` - San-Dns setting.
-* `san_ip` - San-Ip setting.
+* `mkey` - The name of the system certificate letsencrypt entry.
+* `domain` - The domain name of your application.
+* `validation_method` - Valid values: HTTP-01, TLS-ALPN-01, DNS-01.
+* `key_type` - Key Type. Valid values: RSA-2048, RSA-3072, RSA-4096.
+* `renew_period` - Set how soon FortiWeb obtains the TLS certificate from Let’s Encrypt. Valid values: 1-60.
 
 ## Attribute Reference
 

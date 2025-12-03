@@ -36,18 +36,11 @@ resource "fortiweb_system_certificate_local_import_certificate" "test3" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate local entry.
-* `type` - Type setting.
-* `status` - Status setting.
-* `comment` - Comment setting.
-* `flag` - Flag setting.
-* `is_hsm` - Is-Hsm setting.
-* `partition_number` - Partition-Number setting.
-* `certificate` - Certificate setting.
-* `private_key` - Private-Key setting.
-* `passwd` - Passwd setting.
-* `is_primus_hsm` - Is-Primus-Hsm setting.
-* `primus_partition` - Primus-Partition setting.
+* `mkey` - The name of the system certificate local entry.
+* `certificatefile` - The name of a certificate file.
+* `keyfile` - The name of a key file
+* `certificatewithkeyfile` - The name of a certificate file.
+* `password` - The password for the certificate.
 
 ## Attribute Reference
 

@@ -25,12 +25,10 @@ resource "fortiweb_system_snmp_sysinfo" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system snmp sysinfo entry.
-* `status` - Status setting.
-* `engine_id` - Engine-Id setting.
-* `description` - Description setting.
-* `contact_info` - Contact-Info setting.
-* `location` - Location setting.
+* `status` - Enable to activate the SNMP agent. Valid values: enable, disable.
+* `description` - A description of the FortiWeb appliance.
+* `contact_info` - The contact information for the administrator or other person responsible for this FortiWeb appliance.
+* `location` - The physical location of the FortiWeb appliance. 
 
 ## Attribute Reference
 

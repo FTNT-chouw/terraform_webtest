@@ -28,47 +28,13 @@ resource "fortiweb_system_admin" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system admin entry.
-* `access_profile` - Access-Profile setting.
-* `trusthostv4` - Trusthostv4 setting.
-* `trusthostv6` - Trusthostv6 setting.
-* `last_name` - Last-Name setting.
-* `first_name` - First-Name setting.
-* `email_address` - Email-Address setting.
-* `phone_number` - Phone-Number setting.
-* `mobile_number` - Mobile-Number setting.
-* `hidden` - Hidden setting.
-* `domains` - Domains setting.
-* `gui_global_menu_favorites` - Gui-Global-Menu-Favorites setting.
-* `gui_vdom_menu_favorites` - Gui-Vdom-Menu-Favorites setting.
-* `column` - Column setting.
-* `status` - Status setting.
-* `name` - Name setting.
-* `layout_type` - Layout-Type setting.
-* `permanent` - Permanent setting.
-* `widget_table` - Widget-Table setting.
-* `type` - Type setting.
-* `admin_usergrp` - Admin-Usergrp setting.
-* `password` - Password setting.
-* `wildcard` - Wildcard setting.
-* `accprofile_override` - Accprofile-Override setting.
-* `fortiai` - Fortiai setting.
-* `sshkey` - Sshkey setting.
-* `passwd_set_time` - Passwd-Set-Time setting.
-* `history_password_pos` - History-Password-Pos setting.
-* `history_password0` - History-Password0 setting.
-* `history_password1` - History-Password1 setting.
-* `history_password2` - History-Password2 setting.
-* `history_password3` - History-Password3 setting.
-* `history_password4` - History-Password4 setting.
-* `history_password5` - History-Password5 setting.
-* `history_password6` - History-Password6 setting.
-* `history_password7` - History-Password7 setting.
-* `history_password8` - History-Password8 setting.
-* `history_password9` - History-Password9 setting.
-* `force_password_change` - Force-Password-Change setting.
-* `feature_info_ver` - Feature-Info-Ver setting.
-* `old_password` - Old-Password setting.
+* `mkey` - The name of the system admin entry.
+* `type` - Valid values: local-user, remote-user.
+* `trusthostv4` - To allow login attempts from any IP address, enter 0.0.0.0/0.
+* `trusthostv6` - To allow login attempts from any IP address, enter ::/0. 
+* `access_profile` - Enter the name of an access profile that gives the permissions for this administrator account.
+* `force_password_change` - Enable force password change for next login. Valid values: enable. disable.
+* `password` - Enter a password for the administrator account.
 
 ## Attribute Reference
 

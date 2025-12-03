@@ -23,9 +23,8 @@ resource "fortiweb_system_ntp" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system ntp entry.
-* `ntpsync` - Ntpsync setting.
-* `syncinterval` - Syncinterval setting.
+* `ntpsync` - Enable/disable use of NTP.
+* `syncinterval` - Specify how often the system synchronizes its time with the NTP server. Valid values: 1-1440.
 
 ## Attribute Reference
 

@@ -24,11 +24,11 @@ resource "fortiweb_system_certificate_multi_local" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate multi local entry.
-* `comment` - Comment setting.
-* `rsa_cert` - Rsa-Cert setting.
-* `dsa_cert` - Dsa-Cert setting.
-* `ecc_cert` - Ecc-Cert setting.
+* `mkey` - The name of the system certificate multi local entry.
+* `comment` - A description or other comment. 
+* `rsa_cert` - Select the RSA certificate created in system certificate local.
+* `dsa_cert` - Select the DSA certificate created in system certificate local.
+* `ecc_cert` - Select the ECDSA certificate created in system certificate local.
 
 ## Attribute Reference
 

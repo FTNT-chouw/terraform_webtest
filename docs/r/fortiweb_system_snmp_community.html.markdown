@@ -36,20 +36,19 @@ The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
 * `mkey` - The ID of the system snmp community entry.
-* `name` - Name setting.
-* `status` - Status setting.
-* `ip` - Ip setting.
-* `query_v1_status` - Query-V1-Status setting.
-* `query_v1_port` - Query-V1-Port setting.
-* `query_v2c_status` - Query-V2C-Status setting.
-* `query_v2c_port` - Query-V2C-Port setting.
-* `trap_v1_status` - Trap-V1-Status setting.
-* `trap_v1_lport` - Trap-V1-Lport setting.
-* `trap_v1_rport` - Trap-V1-Rport setting.
-* `trap_v2c_status` - Trap-V2C-Status setting.
-* `trap_v2c_lport` - Trap-V2C-Lport setting.
-* `trap_v2c_rport` - Trap-V2C-Rport setting.
-* `events` - Events setting.
+* `name` - The name of the SNMP community to which the FortiWeb appliance and at least one SNMP manager belongs.
+* `status` - Enable to activate the community. Valid values: enable, disable.
+* `query_v1_status` - Enable to respond to queries using the SNMP v1 version of the SNMP protocol. Valid values: enable, disable.
+* `query_v1_port` - The port number on which the FortiWeb appliance will listen for SNMP v1 queries from the SNMP managers of the community. Valid values: 1–65535.
+* `query_v2c_status` - Enable to respond to queries using the SNMP v2c version of the SNMP protocol. Valid values: enable, disable.
+* `query_v2c_port` - The port number on which the FortiWeb appliance will listen for SNMP v2c queries from the SNMP managers of the community. Valid values: 1–65535.
+* `trap_v1_status` - Enable to send traps using the SNMP v1 version of the SNMP protocol. Valid values: enable, disable.
+* `trap_v1_lport` - The port number that will be the source port number for SNMP v1 trap packets. Valid values: 1–65535.
+* `trap_v1_rport` - The port number that will be the destination port number for SNMP v1 trap packets. Valid values: 1–65535.
+* `trap_v2c_status` - Enable to send traps using the SNMP v2c version of the SNMP protocol. Valid values: enable, disable.
+* `trap_v2c_lport` - The port number that will be the source port number for SNMP v2c trap packets. Valid values: 1–65535.
+* `trap_v2c_rport` - The port number that will be the destination port number for SNMP v2c trap packets. Valid values: 1–65535.
+* `events` - One or more of the following SNMP event names in order to cause the FortiWeb appliance to send traps when those events occur. Valid values: cpu-high, intf-ip, log-full, mem-low, netlink-down-status, netlink-up-status, policy-start, policy-stop, pserver-failed, sys-ha-cluster-status-change, sys-ha-member-join, sys-ha-member-leave, sys-mode-change, waf-amethod-attack, waf-hidden-fields, waf-pvalid-attack, waf-signature-detection, power-supply-failure.
 
 ## Attribute Reference
 

@@ -23,10 +23,8 @@ resource "fortiweb_system_certificate_tsl_ca" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate tsl ca entry.
-* `type` - Type setting.
-* `distribute_url` - Distribute-Url setting.
-* `update_flag` - Update-Flag setting.
+* `mkey` - The name of the system certificate tsl ca entry.
+* `srcfile` - TSL file.
 
 ## Attribute Reference
 

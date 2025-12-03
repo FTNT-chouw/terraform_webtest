@@ -27,14 +27,12 @@ resource "fortiweb_system_certificate_verify" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate verify entry.
-* `ca` - Ca setting.
-* `crl` - Crl setting.
-* `ocsp` - Ocsp setting.
-* `publish_dn` - Publish-Dn setting.
-* `strictly_need_cert` - Strictly-Need-Cert setting.
-* `partial_chain` - Partial-Chain setting.
-* `crl_allow_expired` - Crl-Allow-Expired setting.
+* `mkey` - The name of the system certificate verify entry.
+* `ca` - The name of an existing CA Group that you want to use to authenticate client certificates.
+* `crl` - The name of an existing CRL Group, if any, to use to verify the revocation status of client certificates.
+* `ocsp` - Specificy the name of an OCSP group.
+* `publish_dn` - Enable to list only certificates related to the specified CA Group. Valid values: enable, disable.
+* `strictly_need_cert` - Enable to strictly require verifying the client certificate. Valid values: enable, disable.
 
 ## Attribute Reference
 

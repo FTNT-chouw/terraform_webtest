@@ -24,9 +24,9 @@ resource "fortiweb_system_snmp_user_hosts" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system snmp user hosts entry.
-* `id` - Id setting.
-* `ip` - Ip setting.
+* `mkey` - The name of the system snmp user.
+* `sub_mkey` - The ID of the system snmp user hosts entry.
+* `ip` - The IP address of the SNMP manager that can do the following when you enable traps, queries, or both in this community.
 
 ## Attribute Reference
 

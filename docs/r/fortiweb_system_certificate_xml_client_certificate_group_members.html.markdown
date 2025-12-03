@@ -24,9 +24,9 @@ resource "fortiweb_system_certificate_xml_client_certificate_group_members" "tes
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate xml client certificate group members entry.
-* `id` - Id setting.
-* `name` - Name setting.
+* `mkey` - The name of the system certificate xml client certificate group.
+* `sub_mkey` - The ID of the system certificate xml client certificate group members entry.
+* `name` - The name of a client that you want to include in the group. 
 
 ## Attribute Reference
 

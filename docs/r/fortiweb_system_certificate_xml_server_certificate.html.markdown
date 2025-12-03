@@ -25,10 +25,10 @@ resource "fortiweb_system_certificate_xml_server_certificate" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate xml server certificate entry.
-* `certificate` - Certificate setting.
-* `private_key` - Private-Key setting.
-* `passwd` - Passwd setting.
+* `mkey` - The name of the system certificate xml server certificate entry.
+* `certificatefile` - The certificate.
+* `keyfile` - The secret key.
+* `passwd` - The password of secret key.
 
 ## Attribute Reference
 
