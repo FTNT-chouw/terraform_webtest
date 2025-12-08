@@ -47,8 +47,16 @@ The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
 * `hostname` - The host name of this FortiWeb appliance.
-* `http` - Access-Profile setting.
-
+* `http` - Enter the port number on which the FortiWeb appliance listens for HTTP access to the web UI. Valid values: 1-65535.
+* `https` - Enter the port number on which the FortiWeb appliance listens for HTTPS (SSL-secured) access to the web UI.  Valid values: 1-65535.
+* `httpsservercertificate` - Specifies the certificate that FortiWeb uses for the accesses to its Web UI through HTTPS.
+* `httpsIntermediateCertificate` - Specifies the intermediate CA group if any.
+* `admin_tls_v12` - Enable to specify TSL 1.2 clients can use to connect securely to the FortiWeb appliance. Valid values: enable, disable.
+* `admin_tls_v13` - Enable to specify TSL 1.3 clients can use to connect securely to the FortiWeb appliance. Valid values: enable, disable.
+* `confsync_enable` - Enable to be able to enter configsync local port via the CLI.
+* `configsync` - Enter the port number the local FortiWeb uses to listen for a remote (peer) FortiWeb. Valid values: 1-65535.
+* `idletimeout` - Enter the amount of time after which an idle administrative session with the web UI or CLI will be automatically logged out.  Valid values: 1-480.
+* `language` - Select which language to use when displaying the web UI. Valid values: english, japanese, simch, trach.
 * `passwordpolicy` - Access-Profile setting.
 * `status` - Enable to enforce password rules for administrator accounts. Valid values: enable, disable.
 * `min_length_option` - Enable to set the minimum length for the password. Valid values: enable, disable.

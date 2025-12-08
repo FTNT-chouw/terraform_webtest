@@ -27,12 +27,12 @@ resource "fortiweb_system_certificate_hpkp" "test" {
 The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
-* `mkey` - The ID of the system certificate hpkp entry.
-* `pin_sha256` - Pin-Sha256 setting.
-* `max_age` - Max-Age setting.
-* `subdomains` - Subdomains setting.
-* `report_uri` - Report-Uri setting.
-* `report_only` - Report-Only setting.
+* `mkey` - The name of the system certificate hpkp profile entry.
+* `pin_sha256` - Enter a Base64 encoded SPKI fingerprint.
+* `max_age` - Enter an interval in which the client will use the SPKI fingerprint to attempt to access the server. Valid values: 0-31536000.
+* `subdomains` - Enable to apply the public key pinning rule to all of the server's subdomains. Valid values: enable, disable.
+* `report_only` - Enable so that FortiWeb sends reports to the specified Report URI.
+* `report_uri` - Enter a URI to which FortiWeb will send pin validation failures.
 
 ## Attribute Reference
 
