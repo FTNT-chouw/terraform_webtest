@@ -58,6 +58,8 @@ The following arguments are supported:
 * `proxy_protocol_version` - the proxy protocol version for the back-end server. Valid values: v1, v2.
 * `http2` - Enable to allow HTTP/2 communication between the FortiWeb and this back-end web server for HTTP/2 security inspections in Reverse Proxy mode; or enable HTTP/2 security inspections in True Transparent Proxy mode.
 * `ssl` - For Reverse Proxy, Offline Protection, and Transparent Inspection modes, specifies whether connections between FortiWeb and the pool member use SSL/TLS. Valid values: enable, disable.
+* `client_certificate_proxy` - Enable to configure seamless PKI integration. Valid values: enable, disable.
+* `client_certificate_proxy_sign_ca` - Select a Sign CA FortiWeb will use to verify and resign new client certificates.
 * `client_certificate` - The client certificate that FortiWeb uses to connect to this server pool member.
 * `server_side_sni` - Specify whether FortiWeb supports SNI for back-end servers that it applies this policy to. Valid values: enable, disable.
 * `server_certificate_verify` - Enable so that FortiWeb appliance will verify certificates presented by HTTP server. Valid values: enable, disable.
