@@ -17,8 +17,6 @@ resource "fortiweb_server_policy_server_pool" "test" {
 	server_balance = "disable"
 	comment = "test"
 	health = "HLTHCK_TCP"
-	hlck_sip = "0.0.0.0/0"
-	hlck_sip6 = "::/0"
 	lb_algo = "round-robin"
 }
 

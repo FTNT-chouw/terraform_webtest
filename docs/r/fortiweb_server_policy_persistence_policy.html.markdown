@@ -13,7 +13,6 @@ Configure FortiWEB server policy persistence policy configuration.
 ```hcl
 resource "fortiweb_server_policy_persistence_policy" "test" {
 	mkey = "test"
-	cookie_path = "/"
 	ipv6_mask_length = 128
 	ipv4_netmask = "255.255.255.255"
 	timeout = 300
