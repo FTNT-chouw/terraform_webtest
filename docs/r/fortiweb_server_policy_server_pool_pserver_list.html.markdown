@@ -54,6 +54,10 @@ The following arguments are supported:
 * `ip` - The IP address of the web server to include in the pool.
 * `port` - The TCP port number where the pool member listens for connections. Valid values: 1–65535. 
 * `conn_limit` - The maximum number of TCP connections that FortiWeb forwards to this pool member. Valid values: 0–1048576.
+* `weight` - If the server pool uses the weighted round robin load-balancing algorithm, type the numerical weight of the pool member. Valid values: 1–99999.
+* `health_check_inherit` - Use the health check specified by health in the server pool/in this pool member configuration. Valid values: enable, disable.
+* `hlck_domain` - Enter the domain name of the server pool.
+* `backup_server` - Enter enable to configure this pool member as a backup server. Valid values: enable, disable.
 * `proxy_protocol` - If the back-end server enables proxy protocol, you need to enable the Proxy Protocol option on FortiWeb so that the TCP SSL and HTTP traffic can successfully go through. Valid values: enable, disable.
 * `proxy_protocol_version` - the proxy protocol version for the back-end server. Valid values: v1, v2.
 * `http2` - Enable to allow HTTP/2 communication between the FortiWeb and this back-end web server for HTTP/2 security inspections in Reverse Proxy mode; or enable HTTP/2 security inspections in True Transparent Proxy mode.
@@ -70,10 +74,16 @@ The following arguments are supported:
 * `tls_v12` - For Reverse Proxy mode, specifies whether secure connections between FortiWeb and the server pool member can use the TLS 1.2 cryptographic protocol. Valid values: enable, disable.
 * `tls_v13` - For Reverse Proxy mode, specifies whether secure connections between FortiWeb and the server pool member can use the TLS 1.3 cryptographic protocol. Valid values: enable, disable.
 * `ssl_cipher` - For Reverse Proxy mode, specifies whether secure connections between FortiWeb and the server pool member use a medium-security, high-security, or custom set of cipher suites. Valid values: medium, high, custom.
+* `use_ciphers_group` - Enable to use SSL Ciphers Group. Valid values: enable, disable.
+* `ssl_ciphers_group` - Specify the name of SSL Ciphers Group when use_ciphers_group is enable. Example: Mozilla-Modern, Mozilla-Intermediate.
 * `rfc7919_comply` - Enable to apply cipher suites that comply with RFC-9719. Valid values: enable, disable.
+* `supported_group` - Select the RFC-9719 ciphers to be supported. Valid values: X25519, prime256v1, secp384r1, secp521r1, brainpoolP256r1, brainpoolP384r1, brainpoolP512r1, ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192.
+* `session_ticket_reuse` - Enable so that FortiWeb reuses the session ticket when establishing an SSL connection to a pserver. Valid values: enable, disable.
+* `session_id_reuse` - Enable so that FortiWeb reuses the session ID when establishing an SSL connection to a pserver. Valid values: enable, disable.
 * `recover` - Specify the number of seconds that FortiWeb waits before it forwards traffic to this pool member after a health check indicates that this server is available again. Valid values: 0–86400.
 * `warm_up` - Specify for how long FortiWeb forwards traffic at a reduced rate after a health check indicates that this pool member is available again but it cannot yet handle a full connection load. Valid values: 0–86400.
 * `warm_rate` - Specify the maximum connection rate while the pool member is starting up. Valid values: 1–86400.
+
 
 ## Attribute Reference
 

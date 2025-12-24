@@ -24,7 +24,10 @@ The following arguments are supported:
 
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
 * `mkey` - The name of the system certificate crl entry.
+* `httpurl` - Enter the HTTP URL of the certificate.
+* `scepurl` - Enter the SCEP URL of the certificate.
 * `srcfile` - Set the certificate. Only certificates in PEM format may be set.
+* `type` - Specify how you set the certificate. Valid values: http, scep, localPC.
 
 ## Attribute Reference
 

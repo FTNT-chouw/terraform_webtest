@@ -15,7 +15,7 @@ resource "fortiweb_user_tacacs_user" "test" {
 	mkey = "test"
 	server = "172.23.133.1"
 	secret = "123"
-	auth_type = "ms_chap"
+	auth_type = "chap"
 	type = "specify"
 }
 
@@ -29,7 +29,8 @@ The following arguments are supported:
 * `mkey` - The name of the user tacacs user entry.
 * `server` - The IP address or domain name of the TACACS+ server.
 * `secret` - The TACACS+ server secret key for the TACACS+ server.
-* `auth_type` - Select Auto to automatically assign an authentication type or select Specify to specify a type among MSCHAP, CHAP, PAP, and ASCII. Valid values: auto, ms_chap, chap, pap, ascii.
+* `auth_type` - Specify a type among MSCHAP, CHAP, PAP, or ASCII when type is Specify. Valid values: auto, ms_chap, chap, pap, ascii. Option MSCHAP may be deprecated in version after 8.0.3 of FortiWeb.
+* `type` - Select Auto to automatically assign an authentication type or select Specify to specify a type among MSCHAP, CHAP, PAP, and ASCII. Valid values: auto, specify.
 
 ## Attribute Reference
 

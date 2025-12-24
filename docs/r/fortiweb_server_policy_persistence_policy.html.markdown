@@ -30,7 +30,6 @@ The following arguments are supported:
 * `type` - Type setting. Valid values: source-ip, persistent-cookie, asp-sessionid, php-sessionid, jsp-sessionid, insert-cookie, HTTP-header, url-parameter, rewrite-cookie, embedded-cookie or ssl-session-id.
 * `cookie_name` - The value to match or the name of the cookie that FortiWeb inserts.
 * `timeout` - The maximum amount of time between requests that FortiWeb maintains persistence, in seconds. Valid values: 10 - 86400.
-* `uuid` - Uuid setting.
 * `ipv4_netmask` - The IPv4 subnet used for session persistence.
 * `ipv6_mask_length` - The IPv6 network prefix used for session persistence.
 * `http_header` - The name of the HTTP header that the persistence feature uses to route requests.

@@ -15,7 +15,7 @@ resource "fortiweb_system_maintenance_systemtime" "test" {
 	daylightsaving = 0
 	timezone = 4
 	mode = "ntpServer"
-	systemTime = "Mon Dec 8 01:31:25 2025\n"
+	systemtime = "Mon Dec 8 01:31:25 2025\n"
 	time = "12/8/2025 1:31:25"
 }
 
@@ -29,7 +29,7 @@ The following arguments are supported:
 * `daylightsaving` - Enable daylight saving time. Valid value: 0-disable, 1-enable. 
 * `timezone` - The index number of the time zone in which the FortiWeb appliance is located.
 * `mode` - Valid value: ntpServer, setTime.
-* `systemTime` - The time for the time zone in which the FortiWeb appliance is located according to a 24-hour clock, formatted as hh:mm:ss.
+* `systemtime` - The time for the time zone in which the FortiWeb appliance is located according to a 24-hour clock, formatted as hh:mm:ss.
 * `time` - The date for the time zone in which the FortiWeb appliance is located, formatted as yyyy-mm-dd.
 
 

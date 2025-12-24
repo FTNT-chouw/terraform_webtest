@@ -11,7 +11,7 @@ Configure FortiWEB user ldap user extracted attributes configuration.
 
 ## Example Usage
 ```hcl
-resource "fortiweb_user_ldap_user_extracted_attritubes" "test" {
+resource "fortiweb_user_ldap_user_extracted_attributes" "test" {
 	mkey = "test"
 	sub_mkey = "1"
 	name = "attribute2"

@@ -35,7 +35,15 @@ The following arguments are supported:
 * `hlck_sip` - The IP address of Hlck-Sip setting.
 * `hlck_sip6` - The IPv6 address of Hlck-Sip6 setting.
 * `lb_algo` - Select the load-balancing algorithms that FortiWeb uses when it distributes new connections among server pool members.
+* `persistence` - Enter the name of the persistence policy that specifies a session persistence method and timeout to apply to the pool.
 * `comment` - Enter a description or other comment.
+* `http_reuse` - Configure multiplexing so that FortiWeb uses a single connection to a server for requests from multiple clients. Valid values: aggressive, always, never, safe.
+* `reuse_conn_total_time` - Enter the maximum time limit in which a cached server connection may be reused. Valid values: 1-1000.
+* `reuse_conn_idle_time` - Enter an idle time limit for a cached server connection. Valid values: 1-1000.
+* `reuse_conn_max_request` - Enter the maximum number of HTTP responses that the cached server connection may handle. Valid values: 1-1000.
+* `reuse_conn_max_count` - Enter the maximum number of allowed cached server connections. Valid values: 1-1000.
+* `reuse_conn_max_count` - Enter the maximum number of allowed cached server connections. Valid values: 1-1000.
+* `adfs_server_name` - Enter a name for the AD FS Server.
 
 ## Attribute Reference
 
