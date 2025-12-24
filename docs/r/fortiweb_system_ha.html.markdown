@@ -17,7 +17,7 @@ resource "fortiweb_system_ha" "test1" {
 
 resource "fortiweb_system_ha" "test2" {
 	mode = "active-passive"
-	prority = 5
+	priority = 5
 	override = "enable"
 	network_type = "upd-tunnel"
 	group_name = "group1"
@@ -33,7 +33,7 @@ resource "fortiweb_system_ha" "test2" {
 
 resource "fortiweb_system_ha" "test3" {
         mode = "active-active-standard"
-        prority = 6
+        priority = 6
         override = "enable"
         group_name = "group1"
         group_id = 0
@@ -49,7 +49,7 @@ resource "fortiweb_system_ha" "test3" {
 
 resource "fortiweb_system_ha" "test4" {
         mode = "active-active-high-volume"
-        prority = 6
+        priority = 6
         override = "enable"
         network_type = "upd-tunnel"
         group_name = "group1"
@@ -78,10 +78,13 @@ The following arguments are supported:
 * `hlck_sync` - Enable to synchronize the back-end servers' health check status from the primary to the secondary nodes. Valid values: enable, disable.
 * `session_pickup` - Enable so that the primary unit in the HA cluster synchronizes the session table with all cluster units. Valid values: enable, disable.
 * `monitor` - The name of one or more network interfaces that each directly correlate with a physical link.
+* `hbdev` - Select which port on this appliance that the main and standby appliances will use to send heartbeat signals and synchronization data between each other.
+* `hbdev_backup ` - Select a secondary, standby port on this appliance that the main and standby appliances will use to send heartbeat signals and synchronization data between each other.
 * `ha_mgmt_status` - Specifies whether the network interface you select provides administrative access to this appliance when it is a member of the HA cluster. Valid values: enable, disable.
 * `ha_mgmt_interface` - Specifies the network interface that provides administrative access to this appliance when it is a member of the HA cluster.
 * `sever_policy_hlck` - Enable HA AA server policy health check. Valid values: enable, disable.
 * `schedule` - Specifies the load-balancing algorithm used by the primary appliance to distribute received traffic over the available cluster members. Valid values: ip, leastconnection, round-robin.
+
 
 ## Attribute Reference
 

@@ -41,9 +41,7 @@ The following arguments are supported:
 * `block_cors_traffic` - Block-Cors-Traffic setting.
 * `allowed_origins_list` - Allowed-Origins-List setting.
 * `allowed_methods` - Allowed-Methods setting.
-* `method` - Method setting.
 * `allowed_headers` - Allowed-Headers setting.
-* `header` - Header setting.
 * `exposed_headers` - Exposed-Headers setting.
 * `remove_other_headers` - Remove-Other-Headers setting.
 * `allowed_credentials` - Allowed-Credentials setting.

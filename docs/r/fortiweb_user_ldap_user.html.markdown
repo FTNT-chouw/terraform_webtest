@@ -49,6 +49,7 @@ The following arguments are supported:
 * `group_dn` - The distinguished name of the LDAP user group.
 * `ssl_connection` - Enable to connect to the LDAP servers using an encrypted connection, then select the style of the encryption in protocol.
 * `protocol` - Select whether to secure the LDAP query using LDAPS or STARTTLS. Valid values: ldaps, starttls.
+* `ca_cert` - Enter the name of the certificate so the FortiWeb will only accept a certificate from the LDAP server that is signed by this CA.
 
 ## Attribute Reference
 
