@@ -13,6 +13,7 @@ Configure FortiWEB system certificate crl configuration.
 ```hcl
 resource "fortiweb_system_certificate_crl" "test" {
 	mkey = "CRL_1"
+	type = "localPC"
 	srcfile = "./cacrl.crl"
 }
 
