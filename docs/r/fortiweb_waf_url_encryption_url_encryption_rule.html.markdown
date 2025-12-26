@@ -37,8 +37,6 @@ The following arguments are supported:
 * `block_period` - The number of seconds that you want to block the requests. Valid values: 1-3600 seconds.
 * `severity` - The severity level that FortiWeb will record when the rule is violated. Valid values: Low, Medium, High and Informative.
 * `trigger` - Select the trigger, if any, that FortiWeb carries out when it logs and/or sends an alert email about a rule violation. 
-* `url_type` - Select whether the URL Pattern field will contain a literal URL (plain), or a regular expression designed to match multiple URLs (regular).
-* `url_pattern` - The literal URL or a regular expression.
 
 ## Attribute Reference
 
