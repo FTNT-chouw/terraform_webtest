@@ -15,7 +15,7 @@ resource "fortiweb_system_maintenance_systemtime" "test" {
 	daylightsaving = 0
 	timezone = 4
 	mode = "ntpServer"
-	systemtime = "Mon Dec 8 01:31:25 2025\n"
+	systemtime = "Mon Dec 8 01:31:25 2025"
 	time = "12/8/2025 1:31:25"
 }
 
