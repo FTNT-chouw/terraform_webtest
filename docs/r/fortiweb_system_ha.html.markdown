@@ -79,7 +79,7 @@ The following arguments are supported:
 * `session_pickup` - Enable so that the primary unit in the HA cluster synchronizes the session table with all cluster units. Valid values: enable, disable.
 * `monitor` - The name of one or more network interfaces that each directly correlate with a physical link.
 * `hbdev` - Select which port on this appliance that the main and standby appliances will use to send heartbeat signals and synchronization data between each other.
-* `hbdev_backup ` - Select a secondary, standby port on this appliance that the main and standby appliances will use to send heartbeat signals and synchronization data between each other.
+* `hbdev_backup` - Select a secondary, standby port on this appliance that the main and standby appliances will use to send heartbeat signals and synchronization data between each other.
 * `ha_mgmt_status` - Specifies whether the network interface you select provides administrative access to this appliance when it is a member of the HA cluster. Valid values: enable, disable.
 * `ha_mgmt_interface` - Specifies the network interface that provides administrative access to this appliance when it is a member of the HA cluster.
 * `sever_policy_hlck` - Enable HA AA server policy health check. Valid values: enable, disable.

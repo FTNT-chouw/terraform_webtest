@@ -31,13 +31,13 @@ The following arguments are supported:
 * `mkey` - The name of the system admin entry.
 * `type` - Valid values: local-user, remote-user.
 * `admin_usergrp` - Enter the name of the remote authentication group whose settings the FortiWeb appliance will use to connect to a remote authentication server when authenticating login attempts for this account.
-* `wildcard` - Used when administrator accounts authenticate via a RADIUS query. Valid value: enable, disable.
+* `wildcard` - Used when administrator accounts authenticate via a RADIUS query. Valid values: enable, disable.
 * `trusthostv4` - To allow login attempts from any IP address, enter 0.0.0.0/0.
 * `trusthostv6` - To allow login attempts from any IP address, enter ::/0. 
 * `access_profile` - Enter the name of an access profile that gives the permissions for this administrator account.
 * `force_password_change` - Enable force password change for next login. Valid values: enable. disable.
 * `password` - Enter a password for the administrator account.
-* `fortiai` - Enable to use FortiAI User. Valid value: enable, disable.
+* `fortiai` - Enable to use FortiAI User. Valid values: enable, disable.
 
 ## Attribute Reference
 

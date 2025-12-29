@@ -44,6 +44,8 @@ The following arguments are supported:
 * `reuse_conn_max_count` - Enter the maximum number of allowed cached server connections. Valid values: 1-1000.
 * `reuse_conn_max_count` - Enter the maximum number of allowed cached server connections. Valid values: 1-1000.
 * `adfs_server_name` - Enter a name for the AD FS Server.
+* `proxy_protocol` - If the back-end server enables proxy protocol, you need to enable the Proxy Protocol option on FortiWeb so that the TCP SSL and HTTP traffic can successfully go through. Valid values: enable, disable.
+* `proxy_protocol_version` - Select the proxy protocol version for the back-end server. Valid values: v1, v2.
 
 ## Attribute Reference
 
