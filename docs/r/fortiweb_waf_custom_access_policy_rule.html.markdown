@@ -1,6 +1,6 @@
 ---
 subcategory: "FortiWEB WAF"
-layout: "fortiadc"
+layout: "fortiweb"
 page_title: "FortiWEB: fortiweb_waf_custom_access_policy_rule"
 description: |-
   Configure FortiWEB waf custom access policy rule configuration.
@@ -26,7 +26,7 @@ The following arguments are supported:
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
 * `mkey` - The name of the waf custom access policy entry.
 * `sub_mkey` - The ID of the waf custom access policy rule entry.
-* `rule_name` - Selet the custom rule. Valid values: Brute-Force-Login, Vulnerability-Scanning, Content-Encoding-Evasion, Brute-Force-Login - Alert Only, Vulnerability-Scanning - Alert Only or Content-Encoding-Evasion - Alert Only.
+* `rule_name` - Select the custom rule. Valid values: Brute-Force-Login, Vulnerability-Scanning, Content-Encoding-Evasion, Brute-Force-Login - Alert Only, Vulnerability-Scanning - Alert Only or Content-Encoding-Evasion - Alert Only.
 
 ## Attribute Reference
 

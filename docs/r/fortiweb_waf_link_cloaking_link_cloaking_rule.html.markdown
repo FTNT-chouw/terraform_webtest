@@ -1,6 +1,6 @@
 ---
 subcategory: "FortiWEB WAF"
-layout: "fortiadc"
+layout: "fortiweb"
 page_title: "FortiWEB: fortiweb_waf_link_cloaking_link_cloaking_rule"
 description: |-
   Configure FortiWEB waf link cloaking link cloaking rule configuration.

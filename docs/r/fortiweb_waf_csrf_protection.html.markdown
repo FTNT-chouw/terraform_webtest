@@ -1,6 +1,6 @@
 ---
 subcategory: "FortiWEB WAF"
-layout: "fortiadc"
+layout: "fortiweb"
 page_title: "FortiWEB: fortiweb_waf_csrf_protection"
 description: |-
   Configure FortiWEB waf csrf protection configuration.

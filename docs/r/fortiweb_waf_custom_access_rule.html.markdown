@@ -1,6 +1,6 @@
 ---
 subcategory: "FortiWEB WAF"
-layout: "fortiadc"
+layout: "fortiweb"
 page_title: "FortiWEB: fortiweb_waf_custom_access_rule"
 description: |-
   Configure FortiWEB waf custom access rule configuration.

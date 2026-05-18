@@ -1,6 +1,6 @@
 ---
 subcategory: "FortiWEB WAF"
-layout: "fortiadc"
+layout: "fortiweb"
 page_title: "FortiWEB: fortiweb_waf_padding_oracle_protected_url_list"
 description: |-
   Configure FortiWEB waf padding oracle protected url list configuration.
