@@ -32,7 +32,7 @@ The following arguments are supported:
 * `type` - Specify the type of regular expression. Valid values: request, response.
 * `action` - Select the specific action to be taken when the request matches the this signature. Valid values: alert, alert_deny, alert_erase, redirect, block-period, send_HTTP_response, only_erase, deny_no_log.
 * `block_period` - The number of seconds that you want to block subsequent requests from the client after the FortiWeb appliance detects that the client has violated the rule. Valid values: 1–3600 seconds.
-* `severity` - Select which severity level the FortiWeb appliance will use when it logs a violation of the rule. Valid values: 1–3600 seconds. Valid values: High, Medium, Low, Info.
+* `severity` - Select which severity level the FortiWeb appliance will use when it logs a violation of the rule. Valid values: High, Medium, Low, Informative.
 * `trigger` - Select which trigger policy, if any, that the FortiWeb appliance will use when it logs and/or sends an alert email about a violation of the rule.
 * `threat_weight` - Set the threat weight. Valid values: low, critical, informational, moderate, substantial, severe.
 

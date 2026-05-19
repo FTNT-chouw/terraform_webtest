@@ -35,7 +35,7 @@ The following arguments are supported:
 * `vdom` - Specifies the vdom to which the data source will be applied when the FortiWEB unit is running in VDOM mode. Only one vdom can be specified. If you want to inherit the vdom configuration of the provider, please do not set this parameter.
 * `mkey` - The name of the waf file upload restriction policy entry.
 * `action` - Enter the action you want FortiWeb to perform when the policy is violated. Valid values: alert, alert_deny, block-period, deny_no_log.
-* `severity` - Select the severity level to use in logs and reports generated when a violation of the rule occurs. Valid values: High, Medium, Low, Info.
+* `severity` - Select the severity level to use in logs and reports generated when a violation of the rule occurs. Valid values: High, Medium, Low, Informative.
 * `trigger` - Enter the name of the trigger to apply when this policy is violated. 
 * `av_scan` - Enter enable to scan for viruses, malware, and greyware.
 * `signature_check` - Enter enable to check for signature.

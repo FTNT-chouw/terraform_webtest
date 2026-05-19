@@ -30,7 +30,7 @@ The following arguments are supported:
 * `host_status` - Enable to require that the Host: field of the HTTP request match a protected hosts entry in order to match the rule. Valid values: enable, disable.
 * `host` - The name of a protected host that the Host: field of an HTTP request must be in order to match the rule.
 * `action` - Select which action the FortiWeb appliance will take when a request matches the URL access rule. Valid values: alert_deny, continue, pass, deny_no_log.
-* `severity` - Select which severity level the FortiWeb appliance will use when a blocklisted IP address attempts to connect to your web servers. Valid values: Informative, Low, Medium, High, Info.
+* `severity` - Select which severity level the FortiWeb appliance will use when a blocklisted IP address attempts to connect to your web servers. Valid values: Informative, Low, Medium, High.
 * `trigger` - Select which trigger.
 
 ## Attribute Reference

@@ -393,7 +393,7 @@ The following arguments are supported:
 * `<constraint_name>_length` - Set the threat severity in response to invalid Content-Length: header value. The name changes according to <constraint_name>. Please note the special cases.
 * `<constraint_name>_length_action` - Select one of the following actions that the FortiWeb appliance will perform when an HTTP request violates one of the rules. Valid values: alert, alert_deny, block-period, deny_no_log, client-id-block-period.
 * `<constraint_name>_block_period` - Block subsequent requests from the client's IP address for a number of seconds.
-* `<constraint_name>_severity` - Select the severity level to use in logs and reports generated when a violation of the rule occurs. Valid values: High, Medium, Low, Info.
+* `<constraint_name>_severity` - Select the severity level to use in logs and reports generated when a violation of the rule occurs. Valid values: High, Medium, Low, Informative.
 * `<constraint_name>_threat_weight` - Set the threat weight for an event when FortiWeb detects a violation of a parameter restriction rule. Valid values: low, critical, informational, moderate, substantial, severe.
 * `<constraint_name>_trigger` - Enter the name of the trigger to apply when this rule is violated.
 

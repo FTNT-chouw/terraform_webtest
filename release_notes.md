@@ -1,6 +1,42 @@
 Release Notes
 ==============================
 
+Release Version 1.0.1
+--------------------
+
+Release Targets
+---------------
+
+FortiWEB Terraform 1.0.1
+
+Features
+---------------
+
+- Add new modules:
+
+  - fortiweb_waf_csrf_protection
+  - fortiweb_waf_csrf_protection_csrf_page_list
+  - fortiweb_waf_csrf_protection_csrf_url_list
+  - fortiweb_waf_custom_access_policy
+  - fortiweb_waf_custom_access_policy_rule
+  - fortiweb_waf_custom_access_rule
+  - fortiweb_waf_link_cloaking_link_cloaking_policy
+  - fortiweb_waf_link_cloaking_link_cloaking_policy_rule_list
+  - fortiweb_waf_link_cloaking_link_cloaking_rule
+  - fortiweb_waf_link_cloaking_link_cloaking_rule_exception
+  - fortiweb_waf_padding_oracle
+  - fortiweb_waf_padding_oracle_protected_url_list
+
+
+- FortiWEB version: v8.0
+
+Notice
+---------------
+
+- For detailed configurations of the new modules, please refer to the internal examples within each module.
+
+==============================
+
 Release Version 1.0.0
 --------------------
 

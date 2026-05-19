@@ -33,7 +33,7 @@ The following arguments are supported:
 * `mkey` - The name of the waf custom access rule entry.
 * `action` - Select which action the FortiWeb appliance will take when it detects a violation of the rule.
 * `block_period` - Type the number of seconds that you want to block subsequent requests from the client.
-* `severity` - Select which severity level the FortiWeb appliance will use when it logs a violation of the rule.
+* `severity` - Select which severity level the FortiWeb appliance will use when it logs a violation of the rule. Valid values: Informative, Low, Medium, High.
 * `trigger` - Select which trigger.
 * `bot_confirmation` - Enable to confirm if the client is indeed a bot.
 * `bot_recognition` - Real Browser Enforcement, CAPTCHA Enforcement, Puzzle CAPTCHA Enforcement, reCAPTCHA Enforcement, reCAPTCHA v3 Enforcement.

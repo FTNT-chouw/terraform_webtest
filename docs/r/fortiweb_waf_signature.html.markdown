@@ -156,7 +156,7 @@ The following arguments are supported:
 * `id` - The ID of a signature class (or, for subclass overrides, the subclass ID). Valid values: 010000000, 020000000, 030000000, 040000000, 050000000, 060000000, 070000000, 080000000, 090000000, 100000000, 110000000, 120000000.
 * `main_class_id` - The ID of a signature class.
 * `name` - The name of a parameter or cookie to match.
-* `severity` - Select which severity level the FortiWeb appliance will use when it logs a violation of the rule. Valid values: Low, Medium, High, Info.
+* `severity` - Select which severity level the FortiWeb appliance will use when it logs a violation of the rule. Valid values: Low, Medium, High, Informative.
 * `status` - Enable to specify whether matching requests match a specified parameter or cookie value as well as the specified parameter or cookie name.
 * `flag_operation` - Flag Operation setting.
 * `status` - Status setting.
