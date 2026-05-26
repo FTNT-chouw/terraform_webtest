@@ -32,7 +32,7 @@ The following arguments are supported:
 * `allow_method` - Select one or more HTTP request methods that you want to allow for this specific policy. Valid values: get, post, head, options, trace, connect, delete, put, patch, webdav, rpc.
 * `override_header` - When Override Header or Override Parameter settings are enabled, FortiWeb should check methods from these headers or parameters as well as the HTTP method used in the actual request.
 * `override_parameter` - When Override Header or Override Parameter settings are enabled, FortiWeb should check methods from these headers or parameters as well as the HTTP method used in the actual request.
-* `severity` - Select the severity level to use in logs and reports generated when a violation of the policy occurs. Valid values: High, Medium, Low, Info.
+* `severity` - Select the severity level to use in logs and reports generated when a violation of the policy occurs. Valid values: High, Medium, Low, Informative.
 * `triggered_action` - The name of the trigger policy you want FortiWeb to apply when a violation of the HTTP request method policy occurs.
 * `allow_method_exception` - The name of an existing HTTP request method exception, if any, to apply to it. 
 
